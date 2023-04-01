@@ -20,7 +20,7 @@ if (!$db)
 $db->query("DROP TABLE `ban`, `communities`, `conversations`, `dms`, `empathies`, `favorites`, `files`, `follows`, `news`, `posts`, `referralkey`, `replies`, `reports`, `tags`, `tokens`, `users`;")
 ?>
 <h1>success</h1>
-<b>1/2 part of the removal process has finished. now delete all oldverse files present in your htdocs of whatever is it called</b>*
+<b>1/2 part of the removal process has finished. now delete all oldverse files present in your htdocs of whatever is it called</b>
 <p>thx for using oldverse uninstaller</p>
 <?php
 unlink("uninstaller.php");
