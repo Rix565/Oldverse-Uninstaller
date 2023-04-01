@@ -11,8 +11,7 @@ $db = @mysqli_connect(DB_HOST, DB_USER, DB_PASS, DB_NAME); // DB_NAME
 // Exit if no db connection
 if (!$db)
 {
-    http_response_code(500);
-    exit;
+    die("misconfiguration happened");
 }
 //removal
 $sql->query("DROP TABLE `ban`, `communities`, `conversations`, `dms`, `empathies`, `favorites`, `files`, `follows`, `news`, `posts`, `referralkey`, `replies`, `reports`, `tags`, `tokens`, `users`;")
